@@ -50,7 +50,7 @@ augroup highlightIdegraphicSpace
   autocmd VimEnter, WinEnter * match IdeographicSpace /　/
 augroup END
 
-"***** Linux用 *****
+"***** 画面表示 *****
 " ウィンドウの縦幅
 set lines=40
 " ウィンドウの横幅
