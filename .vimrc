@@ -19,6 +19,7 @@ set virtualedit=block
 set showmatch matchtime=1
 
 
+
 "***** Tab系 *****
 " Tab文字を半角スペースにする
 " set expandtab
@@ -48,3 +49,11 @@ augroup highlightIdegraphicSpace
   autocmd Colorscheme * highlight IdeographicSpace term=underline ctermbg=DarkGreen guibg=DarkGreen
   autocmd VimEnter, WinEnter * match IdeographicSpace /　/
 augroup END
+
+"***** Linux用 *****
+" ウィンドウの縦幅
+set lines=40
+" ウィンドウの横幅
+set columns=120
+" カラースキーム
+colorscheme morning
