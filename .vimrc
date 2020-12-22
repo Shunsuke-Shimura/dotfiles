@@ -1,5 +1,7 @@
 " まずデフォルトファイルを読み込む 
 source $VIMRUNTIME/defaults.vim
+" エンコーディングの設定
+set encoding=utf-8
 " バックアップファイルをつくらない
 set nobackup
 " クリップボードを用いる
