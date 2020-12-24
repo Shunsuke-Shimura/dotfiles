@@ -1,60 +1,62 @@
-" ‚Ü‚¸ƒfƒtƒHƒ‹ƒgƒtƒ@ƒCƒ‹‚ğ“Ç‚İ‚Ş 
+" ã¾ãšãƒ‡ãƒ•ã‚©ãƒ«ãƒˆãƒ•ã‚¡ã‚¤ãƒ«ã‚’èª­ã¿è¾¼ã‚€ 
 source $VIMRUNTIME/defaults.vim
-" ƒoƒbƒNƒAƒbƒvƒtƒ@ƒCƒ‹‚ğ‚Â‚­‚ç‚È‚¢
+" ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã®è¨­å®š
+set encoding=utf-8
+" ãƒãƒƒã‚¯ã‚¢ãƒƒãƒ—ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã¤ãã‚‰ãªã„
 set nobackup
-" ƒNƒŠƒbƒvƒ{[ƒh‚ğ—p‚¢‚é
+" ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã‚’ç”¨ã„ã‚‹
 set clipboard+=unnamed
 
 
-"***** Œ©‚½–ÚŒn *****
-" ƒXƒe[ƒ^ƒXƒ‰ƒCƒ“‚Ì—LŒø‰»
+"***** è¦‹ãŸç›®ç³» *****
+" ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒ©ã‚¤ãƒ³ã®æœ‰åŠ¹åŒ–
 set laststatus=2
-" s”Ô†‚ğ•\¦
+" è¡Œç•ªå·ã‚’è¡¨ç¤º
 set number
-" Œ»İ‚Ìs‚ğ‹­’²•\¦
+" ç¾åœ¨ã®è¡Œã‚’å¼·èª¿è¡¨ç¤º
 set cursorline
-" vim‚Ì‹éŒ`‘I‘ğ‚Å•¶š‚ª–³‚­‚Ä‚à‰E‚Öi‚ß‚é
+" vimã®çŸ©å½¢é¸æŠã§æ–‡å­—ãŒç„¡ãã¦ã‚‚å³ã¸é€²ã‚ã‚‹
 set virtualedit=block
-" ‘Î‰‚·‚éŠ‡ŒÊ‚âƒuƒŒ[ƒX‚ğ•\¦
+" å¯¾å¿œã™ã‚‹æ‹¬å¼§ã‚„ãƒ–ãƒ¬ãƒ¼ã‚¹ã‚’è¡¨ç¤º
 set showmatch matchtime=1
 
 
 
-"***** TabŒn *****
-" Tab•¶š‚ğ”¼ŠpƒXƒy[ƒX‚É‚·‚é
+"***** Tabç³» *****
+" Tabæ–‡å­—ã‚’åŠè§’ã‚¹ãƒšãƒ¼ã‚¹ã«ã™ã‚‹
 " set expandtab
-" s“ªˆÈŠO‚ÌTab•¶š‚Ì•\¦•
+" è¡Œé ­ä»¥å¤–ã®Tabæ–‡å­—ã®è¡¨ç¤ºå¹…
 set tabstop=4
-" s“ª‚Å‚ÌTab•¶‚Ì•\¦•
+" è¡Œé ­ã§ã®Tabæ–‡ã®è¡¨ç¤ºå¹…
 set shiftwidth=4
 
 
-"***** ŒŸõŒn *****
-" ƒCƒ“ƒNƒŠƒƒ“ƒgƒT[ƒ`
+"***** æ¤œç´¢ç³» *****
+" ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã‚µãƒ¼ãƒ
 set incsearch
-" ŒŸõŒ‹‰Ê‚ğƒnƒCƒ‰ƒCƒg
+" æ¤œç´¢çµæœã‚’ãƒã‚¤ãƒ©ã‚¤ãƒˆ
 set hlsearch
 
 
-"***** ŠeŒ¾ŒêŒn *****
-" ƒVƒ“ƒ^ƒbƒNƒX
+"***** å„è¨€èªç³» *****
+" ã‚·ãƒ³ã‚¿ãƒƒã‚¯ã‚¹
 syntax enable
 
 
-"***** ‘SŠp•¶š‚ÌƒnƒCƒ‰ƒCƒg *****
+"***** å…¨è§’æ–‡å­—ã®ãƒã‚¤ãƒ©ã‚¤ãƒˆ *****
 scriptencoding utf-8
 
 augroup highlightIdegraphicSpace
   autocmd!
   autocmd Colorscheme * highlight IdeographicSpace term=underline ctermbg=DarkGreen guibg=DarkGreen
-  autocmd VimEnter, WinEnter * match IdeographicSpace /@/
+  autocmd VimEnter, WinEnter * match IdeographicSpace /ã€€/
 augroup END
 
-"***** ‰æ–Ê•\¦ *****
-" ƒEƒBƒ“ƒhƒE‚Ìc•
+"***** ç”»é¢è¡¨ç¤º *****
+" ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã®ç¸¦å¹…
 set lines=40
-" ƒEƒBƒ“ƒhƒE‚Ì‰¡•
+" ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã®æ¨ªå¹…
 set columns=120
-" ƒJƒ‰[ƒXƒL[ƒ€
+" ã‚«ãƒ©ãƒ¼ã‚¹ã‚­ãƒ¼ãƒ 
 colorscheme morning
 
