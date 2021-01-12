@@ -47,7 +47,9 @@ syntax enable
 
 "***** Terminal系 *****
 " Cntl-Pでクリップボードから入力
+" 右クリック2回でクリップボードから入力
 tnoremap <C-P> <C-w>"*
+tnoremap <2-RightMouse> <C-w>"*
 
 
 "***** 全角文字のハイライト *****
