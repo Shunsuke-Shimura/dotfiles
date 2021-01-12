@@ -29,6 +29,8 @@ set showmatch matchtime=1
 set tabstop=4
 " 行頭でのTab文の表示幅
 set shiftwidth=4
+" タブを半角文字にする
+set expandtab
 
 
 "***** 検索系 *****
