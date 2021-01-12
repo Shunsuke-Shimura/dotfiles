@@ -45,6 +45,11 @@ set hlsearch
 syntax enable
 
 
+"***** Terminal系 *****
+" Cntl-Pでクリップボードから入力
+tnoremap <C-P> <C-w>"*
+
+
 "***** 全角文字のハイライト *****
 scriptencoding utf-8
 
