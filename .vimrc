@@ -1,3 +1,4 @@
+"***** 初期設定 *****
 " まずデフォルトファイルを読み込む 
 source $VIMRUNTIME/defaults.vim
 " エンコーディングの設定
@@ -68,4 +69,15 @@ set lines=40
 set columns=120
 " カラースキーム
 colorscheme morning
+
+"***** Programming Contest Setting ****
+" /AtCoder以下の.cppファイルを開いたときにテンプレートをbufferに書き出す
+" main関数の1行目に移動
+augroup ProConSetting
+    au!
+    au BufNewFile $HOME/**/AtCoder/*.cpp,$HOME/**/AtCoder/**/*.cpp 
+                \0r $VIM/template/procon_template.cpp
+    au BufNewFile $HOME/**/*.cpp,$HOME/**/AtCoder/**/*.cpp $?{?1
+augroup END
+
 
