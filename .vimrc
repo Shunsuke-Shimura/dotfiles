@@ -75,7 +75,7 @@ colorscheme morning
 " main関数の1行目に移動
 augroup ProConSetting
     au!
-    au BufNewFile $HOME/**/AtCoder/**/*.cpp 0r $VIM/template/procon_template.cpp
+    au BufNewFile $HOME/**/AtCoder/**/*.cpp 0r $HOME/config_files/vim_template/AtCoder_skeleton.cpp
     au BufNewFile $HOME/**/AtCoder/**/*.cpp $?{?2
 augroup END
 
