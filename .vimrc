@@ -76,6 +76,6 @@ colorscheme morning
 augroup ProConSetting
     au!
     au BufNewFile $HOME/**/AtCoder/**/*.cpp 0r $VIM/template/procon_template.cpp
-    au BufNewFile $HOME/**/AtCoder/**/*.cpp $?{?1
+    au BufNewFile $HOME/**/AtCoder/**/*.cpp $?{?2
 augroup END
 
