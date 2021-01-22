@@ -5,7 +5,7 @@
 #define rep2(i, s, n) for (int i = (s); i < (int)(n); i++)
 #define ALL(obj) (obj).begin(), (obj).end()
 using namespace std;
-using P = pair<int, int>
+using P = pair<int, int>;
 using ll = long long;
 template <class T> using vec = vector<T>;
 template <class T> using mat = vector<vector<T>>;
