@@ -7,8 +7,6 @@
 using namespace std;
 using P = pair<int, int>;
 using ll = long long;
-template <class T> using vec = vector<T>;
-template <class T> using mat = vector<vector<T>>;
 template <class T>
 void vectorDebug(const std::vector<T> &v) { for(const auto& x : v){ std::cerr << x << " "; } std::cerr << '\n';}
 template <class T> bool chmax(T &a, const T &b) {if(a < b){a = b; return true;} else {return false;}}
